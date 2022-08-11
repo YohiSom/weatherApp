@@ -66,3 +66,39 @@
 .hearts {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+    .city-container {
+        display: flex;
+    flex-direction: column;
+    width: 0px;
+    /* justify-content: center; */
+    align-items: center;
+    }
+
+    .heart-button {
+        display: flex;
+        
+        margin-top: 41px;
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .city-font {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .container-current-city {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        border-style: groove;
+        // width: 50%;
+        align-items: center;
+        padding: 20px;
+    }
+
+}

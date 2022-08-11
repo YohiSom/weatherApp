@@ -236,4 +236,29 @@
     display: flex;
     width: 446px;
   }
+
+  @media only screen and (max-width: 768px) {
+
+    .select-container {
+      margin-top: 92px;
+      display: flex;
+      justify-content: center;
+      margin-left: 10px;
+      flex-direction: column;
+      margin-bottom: 17px;
+      align-items: center;
+  }
+
+  .toggle-card {
+    display: flex;
+    justify-content: center;
+}
+
+.select-search-container {
+  display: flex;
+ 
+  justify-content: center;
+}
+
+  }
   

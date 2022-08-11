@@ -43,3 +43,19 @@
 .temp-dailey-dark {
     color: #ffff;
 }
+
+@media only screen and (max-width: 768px) {
+    .dailey-container {
+       flex-direction: column;
+       align-items: center;
+       margin-top: 6px;
+         
+    }
+    .dailey-card {
+        border-style: groove;
+        padding: 20px;
+        margin-top: 40px;
+        width: 235px;
+        margin-right: 0px;
+    }
+}

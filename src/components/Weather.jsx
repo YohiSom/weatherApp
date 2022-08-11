@@ -38,7 +38,7 @@ function Weather() {
   //   const [dailey, setDailey] = useState({});
   //   const [city, setCity] = useState("");
 
-  const [newCityName, setNewCityName] = useState("");
+  // const [newCityName, setNewCityName] = useState("");
   const [error, setError] = useState("");
   //   const [loading, setLoading] = useState(true);
   const [newLocationId, setNewLocationId] = useState(null);
@@ -76,14 +76,15 @@ function Weather() {
   //   }, [onClickFavourite]);
 
   useEffect(() => {
-    coords();
-  }, [lat, long, locationKey, currentState]);
-
-  useEffect(() => {
     if (newLocationId) {
       updateWeather();
     }
   }, [newLocationId]);
+
+  useEffect(() => {
+    coords();
+    setNewLocationId(null);
+  }, [lat, long, locationKey, currentState]);
 
   if (loading || dailey === undefined) return <h1>Loading...</h1>;
 

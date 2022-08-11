@@ -1,0 +1,68 @@
+.container-current-city {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    border-style: groove;
+    // width: 50%;
+    align-items: center;
+    padding: 20px;
+}
+
+.city-container {
+    display: flex;
+    justify-content: center;
+    width: 483px;
+}
+
+
+.container-weather-card {
+    display: flex;
+    justify-content: center;
+
+}
+
+.city-font {
+    
+    // margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    
+    
+}
+
+.city-font-dark {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #ffff;
+}
+.heart-button {
+    display: flex;
+    /* margin-top: 41px; */
+    width: 78px;
+    /* align-items: flex-end; */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.temp-font {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.temp-font-dark {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #ffff;
+}
+
+.svg {
+    height: 199px;
+}
+
+.hearts {
+    cursor: pointer;
+}

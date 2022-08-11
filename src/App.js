@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import Weather from "./components/Weather";
+import "./App.css";
+import Navbar from "./components/navBar/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Favourites from "./pages/Favourites";
+import { useAppContext } from "./context/appContext";
+import FavouriteWeather from "./pages/FavouriteWeather";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
+  const { weatherMap, city, error, darkMode, theme } = useAppContext();
+
+  darkMode
+    ? (document.body.style.backgroundColor = "#002B5B")
+    : (document.body.style.backgroundColor = "#FFFFFF");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {" "}
+      <Router>
+        {error && <ErrorPage />}
+        {!error && (
+          <>
+            <Navbar name={city} temp={weatherMap} />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/favourites" element={<Favourites />}></Route>
+              <Route
+                path="/favourites/:id/:name"
+                element={<FavouriteWeather />}
+              />{" "}
+            </Routes>
+          </>
+        )}
+      </Router>
     </div>
   );
 }

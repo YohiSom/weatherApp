@@ -1,0 +1,39 @@
+.nav-container {
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  color: aliceblue;
+  height: 66px;
+  justify-content: space-between;
+  
+}
+
+
+.welcome {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.home-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    
+}
+
+.home-favourite-container {
+    display: flex;
+    justify-content: space-between;
+    width: 134px;
+}
+
+
+

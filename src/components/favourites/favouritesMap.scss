@@ -1,0 +1,23 @@
+.favourites-container {
+    margin-top: 100px;
+    
+}
+
+.favourite-card {
+    display: flex;
+    margin-left: 20px;
+    
+}
+
+.favourite-map {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    margin-right: 10px;
+    align-items: center;
+    width: 95px;
+}
+
+.dark {
+    color: #ffff;
+}

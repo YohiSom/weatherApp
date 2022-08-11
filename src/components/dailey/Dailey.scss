@@ -1,0 +1,45 @@
+.dailey-container {
+    display: flex;
+    margin-top: 78px;
+    justify-content: space-between;
+    /* margin-right: 200px; */
+    /* margin-left: 200px; */
+    justify-content: center;
+    
+    
+}
+
+.dailey-card {
+    border-style: groove;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.day {
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.day-dark {
+    font-weight: bolder;
+    margin-bottom: 5px;
+    color: #ffff;
+}
+
+.dailey-day-card {
+    display: flex;
+    
+    justify-content: center;
+    
+}
+
+.dailey-day-card-dark {
+    display: flex;
+    color: #ffff;
+    justify-content: center;
+    
+}
+
+.temp-dailey-dark {
+    color: #ffff;
+}

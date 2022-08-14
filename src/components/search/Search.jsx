@@ -35,7 +35,7 @@ function Search({ onCurrent }) {
             return new Promise((resolve, reject) => {
               if (query) {
                 fetch(
-                  `http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_API_KEY}&q=${query}`
+                  `https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${process.env.REACT_APP_API_KEY}&q=${query}`
                 )
                   .then((response) => response.json())
                   .then((data) => {
